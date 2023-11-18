@@ -1,0 +1,31 @@
+---
+title: "Categorical Correlation Matrix"
+format: pptx
+editor: visual
+---
+
+------------------------------------------------------------------------
+
+intro slide on what it does
+
+------------------------------------------------------------------------
+
+---
+why would you need it?
+- corrplot only works for continuous variables as it uses XXX to generation correlation coefficient
+- But what if we want to assess the correlation between categorical variables? 
+---
+
+---
+What does this package do?
+- uses cramersV to calculate correlation coefficient between categorical variables 
+- generates a table with correlation values
+- generates correlation matrix plot 
+---
+
+---
+Example Data
+- show birds dataset 
+---
+
+------------------------------------------------------------------------
