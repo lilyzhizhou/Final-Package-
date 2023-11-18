@@ -1,31 +1,55 @@
 ---
 title: "Categorical Correlation Matrix"
-format: pptx
+format: 
+  revealjs:
+    theme: moon 
 editor: visual
 ---
 
-------------------------------------------------------------------------
+## intro slide on what it does
 
-intro slide on what it does
+## why would you need it?
 
-------------------------------------------------------------------------
+-   corrplot only works for continuous variables as it uses XXX to generation correlation coefficient
+-   But what if we want to assess the correlation between categorical variables?
 
----
-why would you need it?
-- corrplot only works for continuous variables as it uses XXX to generation correlation coefficient
-- But what if we want to assess the correlation between categorical variables? 
----
+## What does this package do?
 
----
-What does this package do?
-- uses cramersV to calculate correlation coefficient between categorical variables 
-- generates a table with correlation values
-- generates correlation matrix plot 
----
+-   uses cramersV to calculate correlation coefficient between categorical variables
+-   generates a table with correlation values
+-   generates correlation matrix plot
 
----
-Example Data
-- show birds dataset 
----
+## Example Data
 
-------------------------------------------------------------------------
+-   show birds dataset
+
+```{r, echo = F}
+birds <- read.csv("corrcat/data/birds.csv")
+print(birds[1:10,])
+```
+
+## Example code
+
+```{r, echo = T}
+
+# library(corrcat)
+# 
+# # calculates cramversV scores for all categorical variables 
+# calculate_cramers_v(birds)
+# 
+# # produces a correlation matrix with using the cramersV scores 
+# corrplot_cat(birds)
+# 
+# # prints both the cramers scores in a table and the correlation matrix 
+# cramermatrix_cat(birds[1:4])
+
+```
+
+## notes of the package
+
+-   only works for comparing nominal categorical variables
+-   will need to filter data set of continuous variables prior to using function
+
+```{r, echo = T}
+# cramermatrix_cat(birds[1:4])
+```
