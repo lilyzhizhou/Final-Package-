@@ -25,13 +25,14 @@ birds <- data.frame(color = random_colors, country = random_countries, diet = ra
 # View the first few rows of the dataframe
 head(birds)
 
+# export data
+write.csv(birds, file = "data/birds.csv", row.names = FALSE)
 
 #################
 ### Function ####
 #################
 library(corrplot) # to generate corrplot 
 library(rcompanion) # to use cramers V
-library(caret) # to create dummy variables 
 
 
 # Calculate cramersV scores for overall variable correlation 

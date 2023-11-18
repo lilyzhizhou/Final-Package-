@@ -16,10 +16,9 @@ CramersV score and Correlation matrix
 Calculates CramersV score for categorical variables and produces correlation matrix
 }
 \examples{
-calculate_cramers_v(birds)
 
-corrplot_cat(birds)
-corrplot_cat(birds[1:4])
+corrmatrix_cat(birds)
+corrmatrix_cat(birds[1:4])
 }
 \author{
 Lily Zhou

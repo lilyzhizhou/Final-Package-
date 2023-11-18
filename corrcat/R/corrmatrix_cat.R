@@ -10,10 +10,9 @@
 #' @export
 #'
 #' @examples
-#' calculate_cramers_v(birds)
 #'
-#' corrplot_cat(birds)
-#' corrplot_cat(birds[1:4])
+#' corrmatrix_cat(birds)
+#' corrmatrix_cat(birds[1:4])
 
 
 corrmatrix_cat <- function(df) {
