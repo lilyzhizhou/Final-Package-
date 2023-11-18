@@ -10,7 +10,7 @@ editor: visual
 
 ## why would you need it?
 
--   corrplot only works for continuous variables as it uses XXX to generation correlation coefficient
+-   corrplot only works for continuous variables as it uses Pearson's R to generation correlation coefficients
 -   But what if we want to assess the correlation between categorical variables?
 
 ## What does this package do?
